@@ -36,6 +36,7 @@
                     <th>Name</th>
                     <th>Age</th>
                     <th>File</th>
+                    <th>Image</th>
                 </tr>
             </thead>
             <tbody></tbody>

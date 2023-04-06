@@ -21,3 +21,7 @@ body{
 #list thead th{
     width: 200px;
 }
+
+#list img{
+    width: 200px;
+}

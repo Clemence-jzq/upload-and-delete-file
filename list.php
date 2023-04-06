@@ -15,6 +15,7 @@ if (mysqli_num_rows($res) > 0) {
                 <td>$row[name]</td>
                 <td>$row[age]</td>
                 <td>$row[file]</td>
+                <td><img src=src/file/$row[file]></td>
             </tr>";
     }
 }

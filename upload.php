@@ -13,6 +13,6 @@ if (isset($_FILES['file'])) {
 $data = json_decode($_POST['params'], true);
 $sql = "INSERT INTO person VALUES(NULL, ?, ?, ?)";
 if ($sql = mysqli_prepare($con, $sql)) {
-    mysqli_stmt_bind_param($sql, 'sss', $data['name'], $data['age'], $file);
+    mysqli_stmt_bind_param($sql, 'sss', $data['name'], $data['age'], $file['name']);
     mysqli_stmt_execute($sql);
 }
