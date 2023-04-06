@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // load file list
-    $('#list').load('list.php');
+    $('#list tbody').load('list.php');
 
     // submit form
     $('#fileForm').submit(function () {
@@ -22,9 +22,9 @@ $(document).ready(function () {
             processData: false,
             contentType: false,
 
-            success: function (data) {
-                $('#text').html(data);
+            success: function () {
                 $('input[type=reset]').click();
+                $('#list tbody').load('list.php');
             },
             error: function () {
                 alert('ERROR !');
